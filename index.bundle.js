@@ -1,0 +1,1 @@
+document.body.appendChild((()=>{let e=document.createElement("h1");return e.textContent="Hello Worlds",e})());
