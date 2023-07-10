@@ -1,4 +1,5 @@
 import Menu from "../components/Menu";
+
 const HomePage = () => {
   let screenElement = document.createElement("div");
   let element = document.createElement("h1");
