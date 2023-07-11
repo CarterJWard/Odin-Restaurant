@@ -1,3 +1,5 @@
+import "./global.css";
+
 import HomePage from "./screens/Homepage";
 const App = () => {
   return HomePage();

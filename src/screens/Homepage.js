@@ -2,10 +2,12 @@ import Menu from "../components/Menu";
 
 const HomePage = () => {
   let screenElement = document.createElement("div");
-  let element = document.createElement("h1");
-  element.textContent = "Welcome to Glorious Chickens";
+
+  let headerText = document.createElement("h1");
+  headerText.textContent = "Homepage";
+
   screenElement.appendChild(Menu());
-  screenElement.appendChild(element);
+  screenElement.appendChild(headerText);
   return screenElement;
 };
 
