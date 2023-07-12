@@ -2,16 +2,21 @@ import route from "../router";
 import "./navStyle.css";
 
 const NavigationBar = () => {
-  let parent = document.createElement("div");
+  const parent = document.createElement("div");
   parent.classList.add("navigationBar");
 
-  let homeButton = menuButton("Home", "Home");
-  let menuPageButton = menuButton("Menu", "Menu");
-  let aboutButton = menuButton("About", "About");
+  const buttonContainer = document.createElement("div");
+  buttonContainer.classList.add("navRight");
 
-  parent.appendChild(homeButton);
-  parent.appendChild(menuPageButton);
-  parent.appendChild(aboutButton);
+  const homeButton = menuButton("Home", "Home");
+  const menuPageButton = menuButton("Menu", "Menu");
+  const aboutButton = menuButton("About", "About");
+
+  buttonContainer.appendChild(homeButton);
+  buttonContainer.appendChild(menuPageButton);
+  buttonContainer.appendChild(aboutButton);
+
+  parent.appendChild(buttonContainer);
   return parent;
 };
 

@@ -1,6 +1,12 @@
+@font-face {
+  font-family: testFont;
+  src: url("/src/assets/fonts/FjallaOne-Regular.ttf");
+}
+
 html,
 body {
   padding: 0px;
   margin: 0px;
   border: 0px;
+  font-family: testFont;
 }
