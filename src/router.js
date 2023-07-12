@@ -1,5 +1,6 @@
 import About from "./screens/About";
 import HomePage from "./screens/Homepage";
+import Menu from "./screens/Menu";
 
 const routePage = (selectedPage) => {
   document.body.innerHTML = "";
@@ -10,7 +11,9 @@ const routePage = (selectedPage) => {
       break;
     case "About":
       page = About();
-      console.log(page);
+      break;
+    case "Menu":
+      page = Menu();
       break;
     default:
       page = HomePage();

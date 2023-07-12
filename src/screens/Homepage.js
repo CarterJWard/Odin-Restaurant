@@ -1,4 +1,4 @@
-import Menu from "../components/Menu";
+import NavigationBar from "../components/NavigationBar";
 
 const HomePage = () => {
   let screenElement = document.createElement("div");
@@ -6,7 +6,7 @@ const HomePage = () => {
   let headerText = document.createElement("h1");
   headerText.textContent = "Homepage";
 
-  screenElement.appendChild(Menu());
+  screenElement.appendChild(NavigationBar());
   screenElement.appendChild(headerText);
   return screenElement;
 };

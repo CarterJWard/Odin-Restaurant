@@ -1,17 +1,13 @@
 import route from "../router";
-import "./menuStyles.css";
+import "./navStyle.css";
 
-const Menu = () => {
+const NavigationBar = () => {
   let parent = document.createElement("div");
   parent.classList.add("navigationBar");
 
-  let homeButton = menuButton("Home");
-  let menuPageButton = menuButton("Menu");
-  let aboutButton = menuButton("About");
-
-  aboutButton.onclick = () => {
-    route("About");
-  };
+  let homeButton = menuButton("Home", "Home");
+  let menuPageButton = menuButton("Menu", "Menu");
+  let aboutButton = menuButton("About", "About");
 
   parent.appendChild(homeButton);
   parent.appendChild(menuPageButton);
@@ -19,13 +15,13 @@ const Menu = () => {
   return parent;
 };
 
-const menuButton = (buttonText) => {
+const menuButton = (buttonText, routePath) => {
   let button = document.createElement("button");
   button.textContent = buttonText;
   button.onclick = () => {
-    console.log(`${buttonText} button clicked`);
+    route(routePath);
   };
   return button;
 };
 
-export default Menu;
+export default NavigationBar;
