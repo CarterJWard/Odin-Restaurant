@@ -1,12 +1,22 @@
-import NavigationBar from "../components/NavigationBar";
+import NavigationBar from "../components/NavigationBar/NavigationBar";
+import TextContainer from "../components/TextContainer/TextContainer";
 
 const About = () => {
-  let parent = document.createElement("div");
+  const parent = document.createElement("div");
   parent.appendChild(NavigationBar());
 
-  let title = document.createElement("h1");
+  const content = document.createElement("content");
+
+  const title = document.createElement("h1");
   title.textContent = "About Us";
-  parent.appendChild(title);
+
+  const text = TextContainer(
+    "Glorious Chicken, <br/> We have been making our own chicken for the last 20 years"
+  );
+  content.appendChild(title);
+  content.appendChild(text);
+
+  parent.appendChild(content);
 
   return parent;
 };

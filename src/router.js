@@ -3,7 +3,7 @@ import HomePage from "./screens/Homepage";
 import Menu from "./screens/Menu";
 
 const routePage = (selectedPage) => {
-  document.body.innerHTML = "";
+  document.body.innerHTML = null;
   let page;
   switch (selectedPage) {
     case "Home":
