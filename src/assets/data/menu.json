@@ -1,0 +1,49 @@
+{
+    "menu": [
+      {
+        "name": "Fried Chicken Bucket",
+        "price": 14.99
+      },
+      {
+        "name": "Spicy Chicken Wings",
+        "price": 7.99
+      },
+      {
+        "name": "Chicken Popcorn",
+        "price": 4.99
+      },
+      {
+        "name": "Chicken Sandwich",
+        "price": 6.99
+      },
+      {
+        "name": "Chicken Strips",
+        "price": 8.99
+      },
+      {
+        "name": "Coconut Chicken Tenders",
+        "price": 8.49
+      },
+      {
+        "name": "Chicken Nuggets",
+        "price": 4.49
+      },
+      {
+        "name": "Fried Chicken Drumsticks",
+        "price": 9.99
+      },
+      {
+        "name": "Chicken Biscuits",
+        "price": 2.99
+      },
+      {
+        "name": "Mashed Potatoes",
+        "price": 2.99
+      },
+      {
+        "name": "Sweet Corn",
+        "price": 2.99
+      }
+    ]
+  }
+  

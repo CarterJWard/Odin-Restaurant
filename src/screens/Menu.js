@@ -1,5 +1,7 @@
 import NavigationBar from "../components/NavigationBar/NavigationBar";
 import "./pageStyle.css";
+import menuItems from "../assets/data/menu.json";
+import MenuItem from "../components/MenuItem";
 
 const Menu = () => {
   let parent = document.createElement("div");
@@ -12,8 +14,14 @@ const Menu = () => {
 
   content.appendChild(title);
   parent.appendChild(content);
-
+  createMenuItems(parent);
   return parent;
+};
+
+const createMenuItems = (div) => {
+  menuItems.menu.forEach((item) => {
+    div.appendChild(MenuItem(item));
+  });
 };
 
 export default Menu;
