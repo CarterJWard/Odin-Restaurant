@@ -1,5 +1,6 @@
 import route from "../../router";
 import "./navStyle.css";
+import chicken from "../../assets/images/chicken.png";
 
 const NavigationBar = () => {
   const parent = document.createElement("div");
@@ -12,17 +13,30 @@ const NavigationBar = () => {
   const menuPageButton = menuButton("Menu", "Menu");
   const aboutButton = menuButton("About", "About");
 
+  const image = new Image();
+  image.src = chicken;
+  image.height = 50;
+  image.width = 50;
+
   buttonContainer.appendChild(homeButton);
   buttonContainer.appendChild(menuPageButton);
   buttonContainer.appendChild(aboutButton);
 
+  parent.appendChild(image);
   parent.appendChild(buttonContainer);
   return parent;
 };
 
 const menuButton = (buttonText, routePath) => {
-  let button = document.createElement("button");
-  button.textContent = buttonText;
+  const button = document.createElement("div");
+  button.classList.add("navButton");
+
+  const link = document.createElement("a");
+  link.text = buttonText;
+  link.addEventListener("click", () => {
+    route(routePath);
+  });
+  button.appendChild(link);
   button.onclick = () => {
     route(routePath);
   };

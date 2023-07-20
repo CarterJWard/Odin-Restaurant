@@ -3,18 +3,27 @@
   background-color: black;
   color: white;
   padding: 5px;
+  display: flex;
+  flex-direction: row;
 }
 
 .navRight {
   margin-left: 50%;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
-button {
+.navButton {
   border-radius: 30%;
   padding: 10px;
   font-size: 1em;
+  margin-right: 15%;
+}
+
+.navButton:hover {
+  text-decoration: underline;
+  color: orange;
 }
 
 button:hover {
