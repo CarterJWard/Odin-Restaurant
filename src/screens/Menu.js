@@ -1,27 +1,30 @@
-import NavigationBar from "../components/NavigationBar/NavigationBar";
-import "./pageStyle.css";
 import menuItems from "../assets/data/menu.json";
 import MenuItem from "../components/MenuItem";
+import NavigationBar from "../components/NavigationBar/NavigationBar";
+import ContentContainer from "../components/TextContainer/TextContainer";
+import "./pageStyle.css";
 
 const Menu = () => {
-  let parent = document.createElement("div");
-  let content = document.createElement("content");
+  const parent = document.createElement("div");
+  const content = document.createElement("content");
 
   parent.appendChild(NavigationBar());
 
-  let title = document.createElement("h1");
+  const title = document.createElement("h1");
   title.textContent = "Menu";
 
   content.appendChild(title);
   parent.appendChild(content);
-  createMenuItems(parent);
+  content.appendChild(ContentContainer(createMenuItems()));
   return parent;
 };
 
-const createMenuItems = (div) => {
+const createMenuItems = () => {
+  const menuList = document.createElement("table");
   menuItems.menu.forEach((item) => {
-    div.appendChild(MenuItem(item));
+    menuList.appendChild(MenuItem(item));
   });
+  return menuList;
 };
 
 export default Menu;

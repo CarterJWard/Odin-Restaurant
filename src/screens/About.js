@@ -1,5 +1,5 @@
 import NavigationBar from "../components/NavigationBar/NavigationBar";
-import TextContainer from "../components/TextContainer/TextContainer";
+import ContentContainer from "../components/TextContainer/TextContainer";
 
 const About = () => {
   const parent = document.createElement("div");
@@ -10,11 +10,12 @@ const About = () => {
   const title = document.createElement("h1");
   title.textContent = "About Us";
 
-  const text = TextContainer(
-    "Glorious Chicken, <br/> We have been making our own chicken for the last 20 years"
-  );
+  const text = document.createElement("p");
+  text.textContent =
+    "Glorious Chicken, <br/> We have been making our own chicken for the last 20 years";
+
   content.appendChild(title);
-  content.appendChild(text);
+  content.appendChild(ContentContainer(text));
 
   parent.appendChild(content);
 

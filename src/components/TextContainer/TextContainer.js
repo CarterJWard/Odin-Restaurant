@@ -1,9 +1,9 @@
 import "./style.css";
-const TextContainer = (text) => {
+const ContentContainer = (children) => {
   const parent = document.createElement("div");
   parent.classList.add("TextContainer");
-  parent.textContent = text;
+  parent.appendChild(children);
   return parent;
 };
 
-export default TextContainer;
+export default ContentContainer;
