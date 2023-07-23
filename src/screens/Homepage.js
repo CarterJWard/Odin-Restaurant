@@ -7,7 +7,7 @@ const HomePage = () => {
   let headerText = document.createElement("h1");
 
   headerText.classList.add("heading");
-  headerText.textContent = "Welcome to Glorious Chicken";
+  headerText.textContent = "Welcome to Clucky's Homestyle Fried Chicken";
   content.appendChild(headerText);
 
   screenElement.appendChild(NavigationBar());

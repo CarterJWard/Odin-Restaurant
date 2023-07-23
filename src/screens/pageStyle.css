@@ -1,3 +1,17 @@
 content {
   text-align: center;
 }
+
+table {
+  width: 100%;
+}
+
+/*Targets the menu item named */
+tr :nth-child(1) {
+  text-align: left;
+}
+
+/*Targets Prices of the menu*/
+tr :nth-child(2) {
+  text-align: right;
+}
