@@ -2,11 +2,13 @@
     "menu": [
       {
         "name": "Fried Chicken Bucket",
-        "price": 14.99
+        "price": 14.99,
+        "description": "A crowd favorite, our Fried Chicken Bucket is a feast fit for a king. We take top-quality, locally-sourced chicken pieces and marinate them in a secret blend of herbs and spices passed down through generations. Each piece is then hand-breaded and fried to golden perfection, resulting in a tantalizing crunch on the outside, while retaining all the juicy tenderness on the inside. The Fried Chicken Bucket is served with our homemade dipping sauce, which adds a tangy contrast to the savory chicken. Perfect for family meals or any get-togethers, each bucket serves four to six people."
       },
       {
         "name": "Spicy Chicken Wings",
-        "price": 7.99
+        "price": 7.99,
+        "description": "Turn up the heat with our Spicy Chicken Wings. These wings are not for the faint-hearted! Marinated in a fiery blend of chilies, garlic, and a secret mix of spices, each wing is then deep-fried until crispy. The wings are finally tossed in our homemade hot sauce, offering a generous coating that strikes the perfect balance between spice and flavor. Served with a side of cooling blue cheese dip and fresh celery sticks, our Spicy Chicken Wings offer an explosive flavor journey that spicy food lovers will surely appreciate. Order them if you dare!"
       },
       {
         "name": "Chicken Popcorn",
