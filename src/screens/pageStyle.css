@@ -15,3 +15,18 @@ tr :nth-child(1) {
 tr :nth-child(2) {
   text-align: right;
 }
+
+.signatureItem {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  margin: 1% 5%;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.signatureImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}

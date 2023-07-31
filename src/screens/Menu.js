@@ -1,7 +1,7 @@
 import menuItems from "../assets/data/menu.json";
 import MenuItem from "../components/MenuItem";
 import NavigationBar from "../components/NavigationBar/NavigationBar";
-import ContentContainer from "../components/TextContainer/TextContainer";
+import ContentContainer from "../components/ContentContainer/ContentContainer";
 import "./pageStyle.css";
 
 const Menu = () => {

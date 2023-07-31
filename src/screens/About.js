@@ -1,10 +1,9 @@
 import NavigationBar from "../components/NavigationBar/NavigationBar";
-import ContentContainer from "../components/TextContainer/TextContainer";
+import ContentContainer from "../components/ContentContainer/ContentContainer";
 
 const About = () => {
   const parent = document.createElement("div");
   parent.appendChild(NavigationBar());
-
   const content = document.createElement("content");
 
   const title = document.createElement("h1");

@@ -2,7 +2,10 @@ import "./style.css";
 const ContentContainer = (children) => {
   const parent = document.createElement("div");
   parent.classList.add("TextContainer");
-  parent.appendChild(children);
+  if (children) {
+    parent.appendChild(children);
+  }
+
   return parent;
 };
 
