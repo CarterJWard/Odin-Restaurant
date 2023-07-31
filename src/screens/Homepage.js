@@ -15,6 +15,7 @@ const HomePage = () => {
   headerText.classList.add("heading");
   headerText.textContent = "Welcome to Clucky's Homestyle Fried Chicken";
   subHeading.textContent = "Signature Items";
+  subHeading.classList.add("headingBorder");
 
   const menuItems = menu.menu;
   const signatures = menuItems.filter((element) =>
@@ -35,6 +36,7 @@ const HomePage = () => {
 
 const createSignatureContent = (item) => {
   const container = document.createElement("div");
+  container.classList.add("signatureContent");
   const heading = document.createElement("h2");
   const description = document.createElement("p");
 

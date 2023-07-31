@@ -1,3 +1,7 @@
+body {
+  background-image: url("../assets/images/background.jpg");
+  background-size: 100% auto;
+}
 content {
   text-align: center;
 }
@@ -19,14 +23,33 @@ tr :nth-child(2) {
 .signatureItem {
   display: grid;
   grid-template-columns: 35% 65%;
-  margin: 1% 5%;
-  background-color: blue;
+  margin: 3% 17%;
+  background-color: rgb(244, 164, 4);
   padding: 20px;
   border-radius: 20px;
+  border: 1px solid black;
 }
 
 .signatureImage {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
+}
+
+.signatureContent {
+  padding: 15px;
+}
+
+h1,
+.headingBorder {
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+td {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
 }
